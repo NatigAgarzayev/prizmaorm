@@ -12,7 +12,7 @@ export default function page() {
             return
         }
 
-        await fetch('http://localhost:3000/api/user/signup', {
+        const res = await fetch('http://localhost:3000/api/user/signup', {
             method: 'POST',
             body: JSON.stringify({
                 name,
@@ -20,6 +20,8 @@ export default function page() {
                 password
             })
         })
+
+        console.log(res)
     }
 
     return (

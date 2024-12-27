@@ -1,3 +1,4 @@
+import CookieSend from "@/components/CookieSend";
 import Link from "next/link";
 
 export default async function Home() {
@@ -8,6 +9,7 @@ export default async function Home() {
     <div>
       <p>The amount of Users: {allUsers.length}</p>
       <Link href={'/signup'}>Signup</Link>
+      <CookieSend />
     </div>
   );
 }
