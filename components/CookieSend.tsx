@@ -5,7 +5,7 @@ export default function CookieSend() {
     const cookieSendHandler = async () => {
         'use server'
         const cookieStorage = await cookies()
-        cookieStorage.set("Pizdec", "Salam aleykum", {
+        cookieStorage.set("aasd", "Salam aleykum", {
             httpOnly: true,
             secure: false,
             maxAge: 3600

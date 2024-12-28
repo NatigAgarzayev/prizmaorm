@@ -1,9 +1,9 @@
+'use client'
 import React from 'react'
 
 export default function page() {
 
     const handleSignUp = async (formData: FormData) => {
-        'use server'
         const name = formData.get('name') as string
         const email = formData.get('email') as string
         const password = formData.get('password') as string

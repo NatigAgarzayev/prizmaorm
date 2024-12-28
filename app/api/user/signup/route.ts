@@ -1,4 +1,4 @@
-'use server'
+//'use server' Removed  use server
 import { prisma } from '@/lib/prisma'
 import type { NextRequest } from 'next/server'
 import jwt from 'jsonwebtoken'
